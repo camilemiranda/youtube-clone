@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>YouTube - CLONE</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-pagina">
+
+            <div class="cabecalho-esquerdo">
+                <button class="menu-hamburguer">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="logo">
+                    <img src="./assets/img/logo-youtube.png" alt="Logo do YouTube">
+                </div>
+            </div>
+
+            <div class="cabecalho-pesquisa">
+                <div class="container-pesquisa">
+                    <input type="text" placeholder="Pesquisar" class="ipt-pesquisa">
+                    <button class="botao-pesquisa">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="cabecalho-direito">
+                <button class="button-icone">
+                    <i class="fas fa-video"></i>
+                </button>
+                <button class="button-icone">
+                    <i class="fas fa-bell"></i>
+                </button>
+                <img src="./assets/img/avatar.png" alt="Avatar do Usuário" class="imagem-perfil">
+            </div>
+        </div>
+    </header>
+    
+    <main class="conteudo-pagina">
+        <div class="video-central">
+            <div class="assistir-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DqC8R2p0lls?si=cUVmmKcr9orZlqWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="titulo-video">
+                <h1 class="titulo">
+                    Lançamento Santander Bootcamp 2025
+                </h1>
+            </div>
+
+            <div class="info-video">
+                <div class="info-perfil">
+                    <img src="https://yt3.ggpht.com/_HfgLNdU77la-nFe97KHYFdhfi1IH-1J0I9WUfC9vOeQZWXl53aPGiQG3y2MMwWz0wjgFN56Eiw=s88-c-k-c0x00ffffff-no-rj" alt="Logo DIO" class="avatar-perfil">
+                    <div class="dados-perfil">
+                        <div class="nome-perfil">DIO</div>
+                        <div class="inscritos-perfil">123 mil inscritos</div>
+                    </div>
+                    <button class="button-inscrever" id="botaoinscrever" aria-label="Inscrever-se no canal DIO">INSCREVA-SE</button>
+                </div>
+
+                <div class="acoes-video">
+                    <div class="likes-video">
+                        <button class="btn-like">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>2 mil</span>
+                        </button>
+                        <div class="espaco"></div>
+                        <button class=" btn-dislike">
+                            <i class="fas fa-thumbs-down"></i>
+                        </button>
+                    </div>
+                    <button class="btn-compartilhar">
+                        <i class="fas fa-share"></i>
+                        <span>Compartilhar</span>
+                    </button>
+                    <button class="btn-download">
+                        <i class="fas fa-download"></i>
+                        <span>Download</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="descricao-video">
+                <div class="detalhes-video">
+                    <span>25.403 visualizações</span>
+                    <span>•</span>
+                    <span>Transmitido ao vivo em 5 mai. de 2025</span>
+                </div>
+                <p class=texto-descricao>
+                    Acompanhe o lançamento da 5ª edição do Santander Bootcamp, dessa vez com 3 trilhas incríveis para você escolher:
+                </p>
+                <br>
+                <ul>
+                    <li>Santander Bootcamp 2025 - 5ª.Ed | Back-end com Java</li>
+                    <li>Santander Bootcamp 2025 - 5ª.Ed | Back-end com Python</li>
+                    <li>Santander Bootcamp 2025 - 5ª.Ed | Front-end</li>
+                </ul>
+                <br>
+                <p>Com experts da DIO, Santander, F1rst – o lado tech do Santander e a Universia, empresa que encontra e contrata talentos para o banco.</p>
+                <br>
+                <p>O programa é voltado para aqueles que estão iniciando carreira em desenvolvimento de software, em transição de carreira ou que já atuam profissionalmente e buscam evoluir e conquistar melhores oportunidades no mercado de tecnologia!</p>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+           <div class="video-lateral">
+              <img src="./assets/img/video01.png" alt="Miniatura do video Geração Tech" class="video-miniatura">
+              <div class="info-video-lateral">
+                 <h3 class="titulo-video-lateral">Geração Tech Unimed - BH - Ciência de Dados</h3>
+                 <p class="nome-canal">DigitalInnovationOne</p>
+                 <p class="visualizacoes-data">2,1 mil visualizações • Transmitido há 2 dias</p>
+              </div>
+           </div>
+           <div class="video-lateral">
+              <img src="./assets/img/video02.png" alt="Miniatura do video Scrum Talks" class="video-miniatura">
+              <div class="info-video-lateral">
+                <h3 class="titulo-video-lateral">Scrum Talks</h3>
+                <p class="nome-canal">DigitalInnovationOne</p>
+                <p class="visualizacoes-data">1,6 mil visualizações • Transmitido há 3 dias</p>
+              </div>
+            </div>
+           <div class="video-lateral">
+              <img src="./assets/img/video03.png" alt="Miniatura do video Machine Learning" class="video-miniatura">
+              <div class="info-video-lateral">
+                <h3 class="titulo-video-lateral">Machine Learning Avançado - Fast Track</h3>
+                <p class="nome-canal">DigitalInnovationOne</p>
+                <p class="visualizacoes-data">1,7 mil visualizações • Transmitido há 4 dias</p>
+            </div>
+           </div>
+           <div class="video-lateral">
+              <img src="./assets/img/video04.png" alt="Miniatura do video Global Skills" class="video-miniatura">
+              <div class="info-video-lateral">
+                <h3 class="titulo-video-lateral">Global Skills #2 - Project Planning</h3>
+                <p class="nome-canal">DigitalInnovationOne</p>
+                <p class="visualizacoes-data">971 visualizações • Transmitido há 5 dias</p>
+              </div>
+           </div>
+           <div class="video-lateral">
+              <img src="./assets/img/video05.png" alt="Miniatura do video Como Aprender a Programar" class="video-miniatura" >
+              <div class="info-video-lateral">
+                <h3 class="titulo-video-lateral">Como Aprender a Programar Python do Zero</h3>
+                <p class="nome-canal">DigitalInnovationOne</p>
+                <p class="visualizacoes-data">711 visualizações • Transmitido há 6 dias</p>
+            </div>
+           </div>
+           <div class="video-lateral">
+              <img src="./assets/img/video06.png" alt="Miniatura do video Geração Tech" class="video-miniatura">
+              <div class="info-video-lateral">
+                 <h3 class="titulo-video-lateral">Geração Tech Unimed - BH - Ciência de Dados</h3>
+                 <p class="nome-canal">DigitalInnovationOne</p>
+                 <p class="visualizacoes-data">2,1 mil visualizações • Transmitido há 2 dias</p>
+              </div>
+           </div>
+           <div class="video-lateral">
+              <img src="./assets/img/video07.png" alt="Scrum Talks" class="video-miniatura">
+              <div class="info-video-lateral">
+                <h3 class="titulo-video-lateral">Scrum Talks</h3>
+                <p class="nome-canal">DigitalInnovationOne</p>
+                <p class="visualizacoes-data">1,6 mil visualizações • Transmitido há 3 dias</p>
+              </div>
+           </div>
+           <div class="video-lateral">
+              <img src="./assets/img/video08.png" alt="Miniatura do video Machine Learning" class="video-miniatura" >
+              <div class="info-video-lateral">
+                <h3 class="titulo-video-lateral">Machine Learning Avançado - Fast Track</h3>
+                <p class="nome-canal">DigitalInnovationOne</p>
+                <p class="visualizacoes-data">1,7 mil visualizações • Transmitido há 4 dias</p>
+            </div>
+           </div>
+           <div class="video-lateral">
+              <img src="./assets/img/video09.png" alt="Global Skills" class="video-miniatura">
+              <div class="info-video-lateral">
+                <h3 class="titulo-video-lateral">Global Skills #2 - Project Planning</h3>
+                <p class="nome-canal">DigitalInnovationOne</p>
+                <p class="visualizacoes-data">971 visualizações • Transmitido há 5 dias</p>
+              </div>
+           </div>
+        </aside>
+    </main>
+</body>
+</html>
