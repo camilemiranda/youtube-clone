@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #0F0F0F;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.cabecalho {
+  position: fixed;
+  background-color: #fff;
+  border-bottom: 1px solid transparent;
+  z-index: 1000;
+  height: 56px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.cabecalho-pagina {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.cabecalho-esquerdo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-hamburguer {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #606060;
+  font-size: 18px;
+  transition: background-color 0.2s;
+}
+
+.logo {
+  height: 32px;
+  width: auto;
+}
+
+.cabecalho-pesquisa {
+  flex: 1;
+  max-width: 640px;
+  margin: 0 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-pesquisa {
+  display: flex;
+  width: 100%;
+  max-width: 640px;
+}
+
+.ipt-pesquisa {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 40px 0 0 40px;
+  font-size: 16px;
+  outline: none;
+  background: #fff;
+}
+
+.botao-pesquisa {
+  padding: 12px 24px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 40px 40px 0;
+  background: #f8f8f8;
+  cursor: pointer;
+  color: #606060;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.cabecalho-direito {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button-icone {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #606060;
+  font-size: 18px;
+  transition: background-color 0.2s;
+}
+
+.imagem-perfil {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.conteudo-pagina {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 90px;
+  width: 100%;
+  min-height: calc(100vh - 56px);
+}
+
+.video-central {
+  flex: 1;
+  max-width: calc(80vw - 400px);
+  min-width: 0;
+}
+
+.assistir-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: transparent;
+}
+
+.assistir-video iframe {
+  width: 100%;
+  height: 96%;
+  margin-top: 10px;
+  border-radius: 12px;
+}
+
+.info-video {
+  padding: 20px 0px;
+}
+
+.titulo {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 12px;
+  color: #030303;
+}
+
+.info-video {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.info-perfil {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar-perfil {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nome-perfil {
+  font-weight: 500;
+  color: #030303;
+  font-size: 16px;
+}
+
+.inscritos-perfil {
+  color: #606060;
+  font-size: 12px;
+}
+
+.button-inscrever {
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.acoes-video {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.likes-video {
+  display: flex;
+  gap: 10px;
+  background: #eeeeee;
+  border-radius: 18px;
+}
+
+.btn-like {
+  background: none;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #030303;
+  transition: background-color 0.2s;
+}
+
+.btn-dislike {
+  background: none;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #030303;
+  transition: background-color 0.2s;
+}
+
+.btn-compartilhar {
+  background: #eeeeee;
+  border: none;
+  border-radius: 18px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #030303;
+  transition: background-color 0.2s;
+}
+
+.btn-download {
+  background: #eeeeee;
+  border: none;
+  border-radius: 18px; 
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #030303;
+  transition: background-color 0.2s;
+}
+
+.espaco {
+  width: 1px;
+  background: #e5e5e5;
+  margin: 8px 0;
+}
+
+.descricao-video {
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.detalhes-video {
+  color: #606060;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.descricao-video span {
+  margin-right: 8px;
+}
+
+.texto-descricao {
+  color: #030303;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin: 0;
+  list-style-position: inside;
+}
+
+.sidebar {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border-left: 50px solid transparent;
+  padding: 0 8px;
+}
+
+.video-lateral {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.video-miniatura {
+  width: 220px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.info-video-lateral {
+  flex: 1;
+  min-width: 0;
+}
+
+.titulo-video-lateral {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 4px;
+  color: #030303;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.nome-canal,
+.visualizacoes-data {
+  color: #606060;
+  font-size: 12px;
+}
+
+/* Telas até 1024px (tablet) */
+@media (max-width: 1024px) {
+  .conteudo-pagina {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .video-central {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 16px;
+    border-left: none;
+  }
+
+  .video-lateral {
+    flex-direction: row;
+  }
+
+  .video-miniatura {
+    width: 180px;
+    height: 100px;
+  }
+}
+
+/* Telas até 768px (mobile) */
+@media (max-width: 768px) {
+  .cabecalho-pesquisa {
+    display: none;
+  }
+
+  .conteudo-pagina {
+    margin-top: 64px;
+  }
+
+  .titulo {
+    font-size: 18px;
+  }
+
+  .btn-like,
+  .btn-dislike,
+  .btn-compartilhar,
+  .btn-download {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .video-miniatura {
+    width: 160px;
+    height: 90px;
+  }
+
+  .titulo-video-lateral {
+    font-size: 14px;
+  }
+}
