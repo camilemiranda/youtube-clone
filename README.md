@@ -63,15 +63,11 @@ As **Media Queries** foram cuidadosamente aplicadas para ajustar o menu, grid de
 ## 📌 Aprendizados
 Durante esse projeto, aprofundei meu conhecimento em:
 
-Organização de código
-
-Posicionamento de elementos com Flexbox e Grid
-
-Criação de layouts responsivos
-
-Boas práticas com HTML e CSS puros
-
-Depuração visual e design limpo
+- Organização de código
+- Posicionamento de elementos com Flexbox e Grid
+- Criação de layouts responsivos
+- Boas práticas com HTML e CSS puros
+- Depuração visual e design limpo
 
 ##
 
