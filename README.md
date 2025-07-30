@@ -60,12 +60,6 @@ As **Media Queries** foram cuidadosamente aplicadas para ajustar o menu, grid de
 
 ---
 
-## 🖼️ Captura de Tela
-
-*(adicione aqui um print da interface final do projeto — ou um GIF se quiser mostrar a responsividade em ação)*
-
----
-
 ## 📌 Aprendizados
 Durante esse projeto, aprofundei meu conhecimento em:
 
